@@ -9,7 +9,7 @@ import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 
 public class NashornDemo {
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws FileNotFoundException, ScriptException {
 		ScriptEngineManager scriptEngineManager = new ScriptEngineManager();
 		ScriptEngine engine = scriptEngineManager.getEngineByName("nashorn");
 		try {
@@ -21,5 +21,6 @@ public class NashornDemo {
 		} catch (ScriptException | NoSuchMethodException e) {
 			e.printStackTrace();
 		}
+//		engine.eval("print('Hello Keerthi')");
 	}
 }

@@ -12,6 +12,10 @@ class Car implements Ridable {
 	public void ride() {
 		System.out.println("You are riding a car");
 	}
+
+	public void display() {
+		System.out.println("Hello interface");
+	}
 }
 
 class Bike implements Ridable {
