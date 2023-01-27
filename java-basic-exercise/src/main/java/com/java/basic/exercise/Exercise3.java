@@ -1,7 +1,5 @@
 package com.java.basic.exercise;
 
-import java.util.Arrays;
-
 public class Exercise3 {
 	static void Arrange(String[] inputArray, int inputInt) {
 		for (int i = 1; i < inputInt; i++) {
@@ -11,7 +9,6 @@ public class Exercise3 {
 					inputArray[j - 1] = inputArray[j];
 				}
 				inputArray[inputInt - 1] = temp;
-				System.out.println(Arrays.toString(inputArray));
 			}
 		}
 	}
@@ -21,7 +18,7 @@ public class Exercise3 {
 		int inputInt = inputArray.length;
 		Arrange(inputArray, inputInt);
 		for (int k = 0; k < inputInt; k++) {
-			System.out.println(inputArray[k]);
+			System.out.print(inputArray[k]+" ");
 		}
 	}
 }
